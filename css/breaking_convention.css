@@ -1,0 +1,63 @@
+/* Default body styles */
+body {width: 100%; margin: 0; background-color:white;}
+h1, h2, h3 {font-family:"Bodoni Moda", Serif;}
+a, p {font-family: "Montserrat", sans-serif;}
+
+/* Skip to Main */
+.skip {position: absolute; top: -40px; background-color: black; padding: 10px; }
+.skip:focus {top: 10px;}
+
+/* Header */
+#logo {width: 100%;}
+#logo a {display: block;}
+#logo img {box-sizing: border-box; padding: 20px; width: 100%;}
+
+header h1 {width: 100%; text-align: center; font-size: 4em; line-height: 1em;
+           margin: 0; padding: 10px 0 10px 0;}
+
+/* nav styles */
+#header_nav {width: 100%}
+#header_nav ul {text-decoration: none; padding: 0; margin: 1em auto 1em auto;
+                text-align: center;}
+#header_nav li {display: inline; padding: 1em 2em .5em 2em;}
+#header_nav a {text-decoration: none; padding: .5em;}
+
+/* link styles */
+a:link {color: black; text-decoration: none;}
+a:visited {color: red;}
+a:hover {border: 1px dashed black;}
+a:active {border: 2px bevel red;}
+
+.focus {background-color: black; border-radius: .3em;}
+.focus a {color: white;}
+.focus a:hover {border: 1px dashed white;}
+
+
+img {width: 100%; display: block;}
+
+/* Aside Sticky Header */
+#hide {display: none;}
+
+/* Main Content */
+
+#hide {display: none;}
+
+#header_hero {margin-top: 2rem; position: relative;}
+#header_hero h2 {text-align: center; font-size: 2em; margin: 0; position: absolute; width: 100%;
+                 top: 50%; left: 50%; color: white; transform: translate(-50%, -50%)}
+#header_hero p {text-align: center; font-size: 1.5em; margin-top: .1em; width: 100%;
+                position: absolute; top: 60%; left:50%; color: white; transform: translate(-50%)}
+#header_hero img:hover {transform: scaleX(-1); filter: grayscale(90%)}
+
+/* Grid Setup */
+
+.grid {display: grid;}
+.model_right {grid-template-columns: 1fr;}
+.model_left {grid-template-columns: 1fr;}
+.model_spread {grid-template-columns: 1fr;}
+.details img {margin-top: 3em;}
+
+/* Breaking Convention Images */
+#urban_electric {margin-top: 3em; background: url("../images/neon_youth/j_fashion.png") no-repeat center/cover; width: 100%;}
+#historic_future {margin-top: 3em; background: url("../images/neon_youth/historic_modern.png") no-repeat center/cover; width: 100%;}
+#pastel_plur {margin-top: 3em; background: url("../images/neon_youth/plur_baby.png") no-repeat center/cover; width: 100%;}

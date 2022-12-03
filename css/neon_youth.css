@@ -1,0 +1,149 @@
+/* Default body styles */
+body {width: 100%; margin: 0; background-color:white;}
+h1, h2, h3 {font-family:"Bodoni Moda", Serif;}
+a, p {font-family: "Montserrat", sans-serif;}
+
+/* Skip to Main */
+.skip {position: absolute; top: -40px; background-color: black; padding: 10px; }
+.skip:focus {top: 10px;}
+
+/* Header */
+#logo {width: 100%;}
+#logo a {display: block;}
+#logo img {box-sizing: border-box; padding: 20px; width: 100%;}
+
+header h1 {width: 100%; text-align: center; font-size: 4em; line-height: 1em;
+           margin: 0; padding: 10px 0 10px 0;}
+
+#header_nav {width: 100%}
+#header_nav ul {text-decoration: none; padding: 0; margin: 1em auto 1em auto;
+                text-align: center;}
+#header_nav li {display: inline; padding: .5em .5em .5em .5em;}
+#header_nav a {text-decoration: none; padding: .3em; font-size: 1em;}
+
+
+/* link styles */
+a:link {color: black; text-decoration: none;}
+a:visited {color: red;}
+a:hover {border: 1px dashed black;}
+a:active {border: 2px bevel red;}
+
+.focus {background-color: black; border-radius: .3em;}
+.focus a {color: white;}
+.focus a:hover {border: 1px dashed white;}
+
+
+img {width: 100%; display: block;}
+
+/* Main Content */
+
+#hide {display: none;}
+
+#header_hero {margin-top: 2rem; position: relative;}
+#header_hero h2 {text-align: center; font-size: 3em; margin: 0; position: absolute; width: 100%;
+                 top: 50%; left: 50%; color: white; transform: translate(-50%, -50%)}
+#header_hero p {text-align: center; font-size: 1.5em; margin-top: .1em; width: 100%;
+                position: absolute; top: 60%; left:50%; color: white; transform: translate(-50%)}
+#header_hero img:hover {transform: scaleX(-1); filter: grayscale(90%)}
+.section_header h2 {font-size: 1.5em; margin-left: 1em;}
+
+/* Grid Setup */
+
+.grid {display: grid;}
+.model_right {grid-template-columns: 1fr;}
+.model_left {grid-template-columns: 1fr;}
+.model_spread {grid-template-columns: 1fr;}
+.detail_thumb {margin-top: 3em;}
+
+/* Images for Neon Youth page */
+#urban_electric {margin-top: 3em; background: url("../images/neon_youth/j_fashion.png") no-repeat center/cover; width: 100%; height: 800px; display: block;}
+#historic_future {margin-top: 3em; background: url("../images/neon_youth/historic_modern.png") no-repeat center/cover; width: 100%; height: 800px; display: block;}
+#pastel_plur {margin-top: 3em; background: url("../images/neon_youth/plur_baby.png") no-repeat center/cover; width: 100%; height: 800px; display: block;}
+
+/* Images for Social Echelon page */
+#feminine_whimsy {margin-top: 3em; background: url("../images/social_echelon/pink_ruffle.png") no-repeat center/cover; width: 100%; height: 800px}
+#edgey_classic {margin-top: 3em; background: url("../images/social_echelon/classic_edge.png") no-repeat center/cover; width: 100%; height: 800px}
+#unbearable_burden {margin-top: 3em; background: url("../images/social_echelon/unbearable_burden.png") no-repeat center/cover; width: 100%; height: 800px;}
+
+.product_spread {position: relative;}
+.product_background {row-gap: 3em;}
+.product {position: absolute; width: 75%; top: 50%; left: 50%;
+          transform: translate(-50%, -50%);}
+
+#footer_img{margin-top: 3em;}
+
+/* Footer */
+footer {width: 100%; background-color: white; margin-top: 3em;}
+footer p {margin: 0;}
+footer h3 {margin: 0;}
+footer div {margin-bottom: 1em; margin-left: 1em;}
+#footer_nav {margin: 0; padding: 0;}
+#footer_nav li {padding-top: 1em; list-style: none;}
+#footer_nav a {list-style: none;}
+
+/* Focus Styles */
+.tabbed:focus {border: solid 4px red;}
+
+/* Aria consideration */
+.aria_alt {display: none;}
+
+/* Media Queries */
+@media screen and (min-width: 750px) {
+    #header_nav a {font-size: 1.5em; padding: .3em}
+    #header_nav li {display: inline; padding: 1.25em 1.25em .5em 1.25em;}
+    .nav_imgs h2 {font-size: 3em;}
+    .nav_imgs p {font-size: 1.25em;}
+    h3 {font-size: 2em;}
+    #footer_nav {font-size: 1.5em;}
+    .section_header h2 {font-size: 2em;}
+
+}
+
+@media screen and (min-width: 1250px) {
+    #header_hero h2 {font-size: 6em;}
+    #header_hero p {font-size: 2.5em;}
+    #header_nav a {font-size: 2em;}
+    #header_nav li {display: inline; padding: 1em 2em .5em 2em;}
+
+    #hide {display: block;}
+    #directory_image_links {width: 60%;}
+    .grid {grid-template-columns: 1fr 4fr; gap: 2em;}
+    #hide {display: block; width: 30%;}
+    #sticky_slide {font-size: 6em; position: sticky; margin: 0; top: 50px;}
+    #main_header {display: none;}
+
+    .section_header {text-align: center; margin-bottom: 0;}
+    .section_header h2 {margin-top: 1em; margin-bottom: 0; font-size: 3em;}
+
+    /* Neon Youth Images */
+    #urban_electric {margin: 0; height: initial;}
+    #historic_future {margin: 0; height: initial;}
+    #pastel_plur {margin: 0; height: initial;}
+
+    /* Social Echelon Images */
+    #feminine_whimsy {margin: 0; height: initial;}
+    #edgey_classic {margin: 0; height: initial;}
+    #unbearable_burden {margin: 0; height: initial;}
+
+    /*.product {top: 50%;}*/
+    .product_background {grid-template-columns: 1fr; margin: 0;}
+    .model_spread {display: grid;}
+    .model_right {grid-template-columns: 1fr 2fr; box-sizing: border-box; margin-top: 3em;}
+    .model_left {grid-template-columns: 1fr 2fr; box-sizing: border-box; margin-top: 3em;}
+    .model_spread {grid-template-columns: 2fr 1fr; box-sizing: border-box;}
+    .model_spread img {margin: 0;}
+    .details {display: flex; flex-flow: column; align-items: flex-start; justify-content: space-between;}
+    .detail_thumb {margin: 0;}
+    
+    /* Footer */
+    footer div {margin-left: 2em;}
+    footer h3 {font-size: 2em;}
+    footer ul {margin: 0; padding: 0; list-style: none;}
+    footer li {text-decoration: none; font-size: 1.5em;}
+    footer p {text-align: center; font-size: 1.5em;}
+}
+
+
+
+
+

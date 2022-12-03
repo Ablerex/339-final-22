@@ -1,0 +1,89 @@
+/* Default body styles */
+body {width: 100%; margin: 0; background-color:white;}
+h1, h2, h3 {font-family:"Bodoni Moda", Serif;}
+a, p {font-family: "Montserrat", sans-serif;}
+.grid {display: grid; grid-template-columns: 1fr;}
+
+/* Skip to Main */
+.skip {position: absolute; top: -40px; left: 10px;}
+.skip:focus {top: 10px;}
+
+/* Header */
+#logo {width: 100%;}
+#logo a {display: block;}
+#logo img {box-sizing: border-box; padding: 20px; width: 100%;}
+
+header h1 {width: 100%; text-align: center; font-size: 4em; line-height: 1em;
+           margin: 0; padding: 10px 0 10px 0;}
+
+/* nav styles */
+#header_nav {width: 100%}
+#header_nav ul {text-decoration: none; padding: 0; margin: 1em auto 1em auto;
+                           text-align: center;}
+#header_nav li {display: inline; padding: .5em .5em .5em .5em;}
+#header_nav a {text-decoration: none; padding: .3em; font-size: 1em;}
+
+/* link styles */
+a:link {color: black; text-decoration: none;}
+a:visited {color: red;}
+a:hover {border: 1px dashed black;}
+a:active {border: 2px bevel red;}
+
+.img_link img:hover {transform: scaleX(-1); filter: grayscale(90%)}
+
+.focus {background-color: black; border-radius: .3em;}
+.focus a {color: white;}
+.focus a:hover {border: 1px dashed white;}
+
+body h2 {width: 100%; text-align: center; font-size: 4em; padding-top: 0; color: black;}
+
+/* Aside Sticky Header */
+#hide {display: none;}
+#hide h2 {color: black;}
+
+/* Main Content */
+.nav_imgs h2 {width: 100%; margin: auto; text-align: center; position: absolute; top: 50%; left: 50%;
+              color: white; font-size: 2em; transform: translate(-50%, -50%); margin-top: 0;}
+
+.nav_imgs p {position: absolute; top: 65%; left: 50%; color: white; transform: translate(-50%, -50%); font-size: .8em; width: 100%}
+
+.nav_imgs {
+    width: 100%; margin-top: 40px; 
+    font-size: 35px; font-family: "Montserrat", sans-serif; font-size: 25px; text-align:center;
+    position: relative; overflow: hidden; display: block;}
+
+img {width: 100%;}
+
+/* Footer */
+footer {width: 100%; background-color: white; margin-top: 3em;}
+footer p {margin: 0;}
+footer h3 {margin: 0;}
+footer div {margin-bottom: 1em; margin-left: 1em;}
+#footer_nav {margin: 0; padding: 0;}
+#footer_nav li {padding-top: 1em; list-style: none;}
+#footer_nav a {list-style: none;}
+
+
+/* Media Queries*/
+@media screen and (min-width: 750px) {
+    #header_nav a {font-size: 1.5em; padding: .3em}
+    #header_nav li {display: inline; padding: 1.25em 1.25em .5em 1.25em;}
+    .nav_imgs h2 {font-size: 3em;}
+    .nav_imgs p {font-size: 1.25em;}
+    h3 {font-size: 2em;}
+    #footer_nav {font-size: 1.5em;}
+}
+
+@media screen and (min-width: 1250px) {
+    .grid {grid-template-columns: 1fr 3fr;}
+    #hide {display: block; width: 30%;}
+    #sticky_slide {font-size: 150px; position: sticky; margin: 0; top: 50px;}
+    #directory_image_links {width: 100%;}
+
+    #header_nav a {font-size: 2em; padding: .5em}
+    #header_nav li {display: inline; padding: 1em 2em .5em 2em;}
+
+    .nav_imgs h2 {font-size: 4.5em;}
+    .nav_imgs p {width: 85%}
+
+}

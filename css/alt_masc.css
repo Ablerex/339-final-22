@@ -1,0 +1,141 @@
+/* Default body styles */
+body {width: 100%; margin: 0; background-color:white;}
+h1, h2, h3 {font-family:"Bodoni Moda", Serif;}
+a, p {font-family: "Montserrat", sans-serif;}
+
+/* Skip to Main */
+.skip {position: absolute; top: -40px; background-color: black; padding: 10px; }
+.skip:focus {top: 10px;}
+
+/* Header */
+#logo {width: 100%;}
+#logo a {display: block;}
+#logo img {box-sizing: border-box; padding: 20px; width: 100%;}
+
+header h1 {width: 100%; text-align: center; font-size: 4em; line-height: 1em;
+           margin: 0; padding: 10px 0 10px 0;}
+
+#header_nav {width: 100%}
+#header_nav ul {text-decoration: none; padding: 0; margin: 1em auto 1em auto;
+                           text-align: center;}
+#header_nav li {display: inline; padding: .5em .5em .5em .5em;}
+#header_nav a {text-decoration: none; padding: .3em; font-size: 1em;}
+
+
+/* link styles */
+a:link {color: black; text-decoration: none;}
+a:visited {color: red;}
+a:hover {border: 1px dashed black;}
+a:active {border: 2px bevel red;}
+
+.focus {background-color: black; border-radius: .3em;}
+.focus a {color: white;}
+.focus a:hover {border: 1px dashed white;}
+
+
+img {width: 100%; display: block;}
+
+/* Main Content */
+
+#hide {display: none;}
+
+#header_hero {margin-top: 2rem; position: relative; width: 100%}
+#header_hero h2 {text-align: center; font-size: 2em; margin: 0; position: absolute; width: 100%;
+                 top: 50%; left: 50%; color: white; transform: translate(-50%, -50%)}
+#header_hero p {text-align: center; font-size: 1.5em; margin-top: .1em; width: 100%;
+                position: absolute; top: 60%; left:50%; color: white; transform: translate(-50%)}
+#header_hero img:hover {transform: scaleX(-1); filter: grayscale(90%)}
+
+/* Flex Setup */
+.flex {display: flex;}
+.product_background {flex-direction: column;}
+.model_right {flex-direction: column;}
+.model_left {flex-direction: column;}
+.model_spread {flex-direction: column;}
+.details {margin-top: 3em;}
+.detail_thumb {box-sizing: border-box; padding-top: 3em;}
+
+/* Images for Alt Masc */
+#ballroom_tens {margin-top: 3em; background: url("../images/breaking_convention/orange_vogue.png") no-repeat center/cover; width: 100%; height: 800px; display: block;}
+#elevated_casual {margin-top: 3em; background: url("../images/breaking_convention/leather_rush.png") no-repeat center/cover; width: 100%; height: 800px; display: block;}
+#solid_opulence {margin-top: 3em; background: url("../images/breaking_convention/red_vuitton.png") no-repeat center/cover; width: 100%; height: 800px; display: block;}
+
+.product_spread {position: relative;}
+.product_background {margin-top: 3em;}
+.product {position: absolute; width: 75%; top: 50%; left: 50%;
+          transform: translate(-50%, -50%);}
+.product_background img:nth-child(2n) {padding-top: 2em;}
+
+#footer_img{margin-top: 3em;}
+
+/* Footer */
+footer {width: 100%; background-color: white; margin-top: 3em;}
+footer p {margin: 0;}
+footer h3 {margin: 0;}
+footer div {margin-bottom: 1em; margin-left: 1em;}
+#footer_nav {margin: 0; padding: 0;}
+#footer_nav li {padding-top: 1em; list-style: none;}
+#footer_nav a {list-style: none;}
+
+/* Focus Styles */
+.tabbed:focus {border: solid 4px red;}
+
+/* Aria consideration */
+.aria_alt {display: none;}
+
+/* Media Queries */
+@media screen and (min-width: 750px) {
+    #header_nav a {font-size: 1.5em; padding: .3em}
+    #header_nav li {display: inline; padding: 1.25em 1.25em .5em 1.25em;}
+    .nav_imgs h2 {font-size: 3em;}
+    .nav_imgs p {font-size: 1.25em;}
+    h3 {font-size: 2em;}
+    #footer_nav {font-size: 1.5em;}
+    .section_header h2 {font-size: 2em;}
+}
+
+@media screen and (min-width: 1250px) {
+    /* Header */
+    #header_hero h2 {font-size: 6em;}
+    #header_hero p {font-size: 2.5em;}
+    #header_nav a {font-size: 2em;}
+
+    /* Main */
+    #hide {display: block;}
+    #directory_image_links {width: 60%;}
+    #hide {display: block; width: 30%;}
+    #sticky_slide {font-size: 150px; position: sticky; margin: 0; top: 50px;}
+    #main_header {display: none;}
+
+    .product_background img:nth-child(2n) {padding-top: 3em;}
+
+    .section_header {font-size: 2em; text-align: center;}
+    .section_header h2 {margin: 1em 0 0 0;}
+
+    /* Model Content */
+
+    .product {top: 50%;}
+    
+    /* Flex */
+    .flex {display: flex; flex-direction: row;}
+    .product_spread {width: 40%;}
+    .product_background {flex-direction: column; margin-top: 0; align-content:space-between;}
+    .product_background img:nth-child(2n) {padding-top: 2em;}
+    .model_right {flex-direction: row; justify-content: space-between;}
+    .model_left {flex-direction: row; justify-content: space-between;}
+    .model_spread {width: 50%}
+    .details {margin: 0 0 0 2em; display: flex; flex-flow: column; align-items: flex-start; justify-content: space-between;}
+    .detail_thumb {margin: 0;}
+
+    /* Alt Masc images */
+    #ballroom_tens {margin:0; height: initial;}
+    #elevated_casual {margin:0; height: initial;}
+    #solid_opulence {margin:0; height: initial;}
+    
+    /* Footer */
+    footer div {margin-left: 2em;}
+    footer h3 {font-size: 2em;}
+    footer ul {margin: 0; padding: 0; list-style: none;}
+    footer li {text-decoration: none; margin-top: 1em; font-size: 1.5em;}
+    footer p {text-align: center; font-size: 1.5em;}
+}
