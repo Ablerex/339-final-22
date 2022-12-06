@@ -63,6 +63,8 @@ footer div {margin-bottom: 1em; margin-left: 1em;}
 #footer_nav li {padding-top: 1em; list-style: none;}
 #footer_nav a {list-style: none;}
 
+/* Tab Styles */
+.tabbed:focus {border: solid 4px red;}
 
 /* Media Queries*/
 @media screen and (min-width: 750px) {
